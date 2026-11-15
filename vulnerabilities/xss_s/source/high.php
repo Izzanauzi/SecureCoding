@@ -1,5 +1,7 @@
 <?php
 
+header ("Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none'; base-uri 'self';");
+
 if( isset( $_POST[ 'btnSign' ] ) ) {
 	// Get input
 	$message = trim( $_POST[ 'mtxMessage' ] );
